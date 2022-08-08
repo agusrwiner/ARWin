@@ -1,0 +1,8 @@
+/* sections */
+.section{
+    background-color: blueviolet;
+    height: clamp( 600px,80vh,1000px );
+    width: 100%;
+
+    margin: 10px 0;
+}

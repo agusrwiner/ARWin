@@ -12,13 +12,13 @@ body{
     align-items: center;
 
     position: relative;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 /* header */
 header{
     background-color: aqua;
     height: min( 500px,45vh );
-    width: 100vw;
+    width: 100%;
     
     background-image: url( "Images/img3.jpg" );
     background-size: cover;
@@ -43,13 +43,4 @@ header::before{
     display: inline-block;
     position: relative;
     z-index: 3000;
-}
-
-/* sections */
-.section{
-    background-color: blueviolet;
-    height: clamp( 600px,80vh,1000px );
-    width: 100vw;
-
-    margin: 10px 0;
 }
