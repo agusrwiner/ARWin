@@ -1,8 +1,62 @@
 /* sections */
 .section{
-    background-color: blueviolet;
+    background-color: rgb(144, 153, 233);
     height: clamp( 600px,80vh,1000px );
     width: 100%;
 
     margin: 10px 0;
+    padding: 25px;
+}
+.section-title{
+    font-size: 70px;
+ 
+    padding: 0 10px;
+}
+#title_servicios{
+    color: rgb(240, 248, 255);
+    background-color: rgba(255, 255, 255, 0.25);
+
+    margin: 20px;
+
+    position: relative;
+    z-index: 3000;
+}
+#title_info{
+    color: rgb(0, 48, 112);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+#title_contacto{
+    color: rgb(0, 48, 112);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#serviciosDIV{
+    background-image: url( "Images/img1.png" );
+    background-size: cover;
+    
+
+    padding: 0;
+
+    position: relative;
+}
+#serviciosDIV::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2000;
+
+    background-color: rgba(0, 0, 0, 0.33);
+}
+.servicio{
+    position: relative;
+    z-index: 3000;
+}
+
+#informacionDIV{
+    background-color: rgb(202, 231, 239);
+}
+
+#contactoDIV{
+    background-color: rgb(240, 248, 255);
 }
