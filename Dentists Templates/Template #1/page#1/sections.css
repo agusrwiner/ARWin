@@ -75,6 +75,52 @@
 #informacionDIV{
     background-color: rgb(202, 231, 239);
 }
+#data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+
+    min-height: 40%;
+    margin: 15px 0;
+}
+#data::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 60%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+.sub_informacionH4{
+    position: relative;
+
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: .85px;
+    text-align: center;
+}
+.sub_informacionH4:nth-child(1)::before{
+    content: 'Direccion:';
+    display: block;
+    position: relative;
+    inset: 0;
+    top: -100%;
+}
+.sub_informacionH4:nth-child(2)::before{
+    content: 'Horarios:';
+    display: block;
+    position: relative;
+    inset: 0;
+    top: -100%;
+}
+
 
 #contactoDIV{
     background-color: rgb(240, 248, 255);
