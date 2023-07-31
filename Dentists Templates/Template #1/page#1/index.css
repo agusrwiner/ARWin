@@ -5,42 +5,118 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
     position: relative;
-    /*overflow-x: hidden;*/
+
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-color: aliceblue;
 }
-/* header */
-header{
-    background-color: aqua;
-    height: min( 500px,45vh );
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link{
+    display: inline-block;
+
+    text-decoration: none;
+    color: #0f0f0f;
+    text-align: center;
+}
+.background{
+    position: absolute;
+    z-index: 2000;
+    display: inline-block;
+
     width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+/* end defaults */
+
+/* header */
+#header{
+    position: relative;
+
+    min-height: 500px;
+    height: 45vh;
+    width: 100vw;
     
     background-image: url( "Images/img3.jpg" );
     background-size: cover;
     background-position-x: center;
-
+    background-color: #00ffff;
+}
+.growLimit{
     position: relative;
-}
-header::before{
-    content: '';
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    min-height: 100%;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2000;
-
-    background-color: rgba(0, 48, 112,0.65);
+    max-width: 1000px;
 }
-#mainTitle{
-    color: rgb(255, 255, 255);
-    font-size: 90px;
-    margin: 10px 30px;
-
-    display: inline-block;
+#headerBackground{
+    background-color: #003070a6;
+}
+.title{
     position: relative;
     z-index: 3000;
+
+    display: inline-block;
+
+    max-width: 500px;
+    padding: 5% 7%;
+
+    color: #f5f5f5;
+    font-size: clamp( 70px,10vw,100px );
 }
+
+/* NAVBAR */
+#navbar{
+    position: absolute;
+    z-index: 3000;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    min-height: 80px;
+    width: 90%;
+    
+    background-color: #f2f2f280;
+    color: #0f0f0f;
+}
+#navbarUL{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 100%;
+    width: 100%;
+
+    list-style: none;
+}
+#navBarLinks{
+    flex-direction: row;
+    gap: 30px;
+
+    font-size: 18px;
+}
+.navbarLink{
+    color: #0f0f0f;
+}
+#sacarTurno{
+    max-width: 75px;
+    
+    font-weight: 600;
+    font-size: 22px;
+}
+/* END NAVBAR */
