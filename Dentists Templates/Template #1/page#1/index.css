@@ -12,6 +12,10 @@ body{
 
     background-color: aliceblue;
 }
+:root{
+    --colorNav: rgb(226, 226, 226);
+    --backgroungNav: rgb(57, 158, 161);
+}
 .flex{
     display: flex;
     justify-content: center;
@@ -112,11 +116,6 @@ body{
 }
 .navbarLink{
     color: #0f0f0f;
-}
-#sacarTurno{
-    max-width: 75px;
-    
     font-weight: 600;
-    font-size: 22px;
 }
 /* END NAVBAR */
