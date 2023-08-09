@@ -7,11 +7,6 @@
     margin: 10px 0;
     padding: 25px;
 }
-.section-title{
-    font-size: 70px;
- 
-    padding: 0 10px;
-}
 #title_servicios{
     color: rgb(240, 248, 255);
     background-color: rgba(255, 255, 255, 0.25);
@@ -21,23 +16,18 @@
     position: relative;
     z-index: 3000;
 }
-#title_info{
-    color: rgb(0, 48, 112);
-    background-color: rgba(0, 0, 0, 0.25);
-}
-#title_contacto{
+#title_info, #title_contacto{
     color: rgb(0, 48, 112);
     background-color: rgba(0, 0, 0, 0.25);
 }
 
 #serviciosDIV{
-    background-image: url( "Images/img1.png" );
-    background-size: cover;
-    
+    position: relative;
 
     padding: 0;
 
-    position: relative;
+    background-image: url( "Images/img1.png" );
+    background-size: cover;
 }
 #serviciosDIV::before{
     content: '';

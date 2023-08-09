@@ -7,7 +7,7 @@
 body{
     position: relative;
 
-    min-height: 100vh;
+    min-height: 400vh;
     overflow-x: hidden;
 
     background-color: aliceblue;
@@ -47,6 +47,7 @@ body{
     min-height: 500px;
     height: 45vh;
     width: 100vw;
+    max-width: 100%;
     
     background-image: url( "Images/img3.jpg" );
     background-size: cover;
@@ -65,7 +66,7 @@ body{
     max-width: 1000px;
 }
 .growLimitNavbar{
-    position: relative;
+    position: absolute;
     justify-content: space-between;
 
     min-height: 80px;
@@ -225,43 +226,15 @@ body{
         transform: translate( 0 ) rotate( 0 );
     }
 }
-
-/* #navbar{
-    position: absolute;
-    z-index: 3000;
-    left: 0;
-    right: 0;
-    bottom: 5%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: auto;
-    min-height: 80px;
-    width: 90%;
-    
-    background-color: #f2f2f280;
-    color: #0f0f0f;
-}
-#navbarUL{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    min-height: 100%;
-    width: 100%;
-
-    list-style: none;
-}
-#navBarLinks{
-    flex-direction: row;
-    gap: 30px;
-
-    font-size: 18px;
-}
-.navbarLink{
-    color: #0f0f0f;
-    font-weight: 600;
-} */
 /* END NAVBAR */
+
+/* estilos generales sections */
+.sectionTitle{
+    display: inline-block;
+
+    width: 100%;
+    padding: 0 0 0 20px;
+    
+    font-size: clamp( 70px,10vw,100px );
+}
+/* FIN estilos generales sections */
