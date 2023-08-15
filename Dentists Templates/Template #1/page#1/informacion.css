@@ -2,7 +2,7 @@
     text-align: center;
     font-family: 'Readex Pro', sans-serif;
     font-weight: 200;
-    font-size: 25px;
+    font-size: clamp( 20px,2.5vw,25px  );
     letter-spacing: .85px;
 }
 
@@ -12,18 +12,24 @@
 
     /* background-color: aqua; */
 }
-#titleInfo{
+.infoSectionTitle{
     background-color: rgba(0, 0, 0, 0.33);
+}
+#titleInfo{
+    display: inline-block;
+
+    width: auto;
+    font-size: clamp( 55px,10vw,100px );
 }
 .mapsDIV{
     width: 90%;
-    min-height: 200px;
+    min-height: 350px;
     background-color: blue;
 }
 #infoDIV{
     position: relative;
 
-    min-height: 60vh;
+    min-height: 75vh;
     width: 100vw;
     max-width: 100%;
 
@@ -49,26 +55,27 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    width: 90%;
+    width: 85%;
 }
 .infoSPAN{
     position: relative;
     gap: 5px;
 
-    width: 45%;
+    /* width: 45%; */
     min-height: 50px;
 
     /* background-color: blueviolet; */
 }
 .separator{
-    position: absolute;
+    /* position: absolute;
     inset: 0 0 0 0;
-    margin: auto;
+    margin: auto; */
     display: inline-block;
 
     width: 1px;
-    height: 115%;
+    min-height: 70px;
 
     background-color: rgb(12, 12, 12);
 }
@@ -96,5 +103,26 @@
     display: inline-block;
 
     position: relative;
-    
+}
+
+@media screen and (max-width:780px) {
+    .informationDIV{
+        flex-direction: column;
+        gap: 20px;
+    }
+    p.infoSubtitle{
+        min-width: 279.25px;
+    }
+    .separator{
+        position: relative;
+        
+        width: 40%;
+        min-height: 1px;
+        height: 1px;
+    }
+}
+@media screen and (max-width:400px){
+    #infoDIV{
+        min-height: 95vh;
+    }
 }

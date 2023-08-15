@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="informacion.css">
 
         <script src="script.js" defer></script>
+        <script src="informacion.js" defer></script>
         <!-- <link rel="stylesheet" href="navbarFooter.css"> -->
     </head>
     <body>
@@ -73,13 +74,12 @@
         </div>
         <div class="section flex" id="infoDIV">
             <div class="growLimit growLimitInfo">
-                <div class="infoSection">
+                <div class="infoSection infoSectionTitle">
                     <h2 class="sectionTitle" id="titleInfo">Informacion</h2>
                 </div>
-                <div class="infoSection flex">
+                <div class="infoSection infoSectionContent flex">
                     <div class="informationDIV">
-                        <span class="infoSPAN flex">
-                            <!-- <h4 class="infoSubtitle textAlignCenter"><span class="material-symbols-outlined icon">location_on</span> Direccion</h4> -->
+                        <span class="infoSPAN flex" id="infoSPAN--1">
                             <div class="test">
                                 <span class="material-symbols-outlined icon">location_on</span>
                                 <h4 class="infoSubtitle textAlignCenter">Direccion</h4>
@@ -87,13 +87,12 @@
                             <p class="infoSubtitle textAlignCenter">Av. Corrientes 4257</p>
                         </span>
                         <span class="separator"></span>
-                        <span class="infoSPAN flex">
-                            <!-- <h4 class="infoSubtitle textAlignCenter"><span class="material-symbols-outlined icon">schedule</span>Horarios:</h4> -->
+                        <span class="infoSPAN flex" id="infoSPAN--2">
                             <div class="test">
                                 <span class="material-symbols-outlined icon">schedule</span>
                                 <h4 class="infoSubtitle textAlignCenter">Horarios:</h4>
                             </div>
-                            <p class="infoSubtitle textAlignCenter">Lunes a Viernes de 9 - 18hs</p>
+                            <p class="infoSubtitle textAlignCenter" id="lu">Lunes a Viernes de 9 - 18hs</p>
                         </span>
                     </div>
                     <div class="mapsDIV"></div>
