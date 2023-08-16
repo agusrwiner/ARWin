@@ -233,7 +233,7 @@ body{
 .sectionTitle{
     display: inline-block;
 
-    width: 100%;
+    /* width: 100%; */
     padding: 0 0 0 20px;
     
     font-size: clamp( 70px,10vw,100px );

@@ -27,15 +27,15 @@
     min-height: 100%;
     width: 100%;
     max-width: 1000px;
-    padding: 80px 35px 80px 20px;
+    padding: 80px 0px;
 }
 
 #titleServicios{
+    display: inline-block;
     position: relative;
     z-index: 2500;
 
     color: rgb(240, 248, 255);
-    background-color: rgba(0, 0, 0, 0.33);
 }
 
 /* Servicio */
@@ -45,7 +45,7 @@
     justify-content: space-between;
     gap: 20px;
 
-    width: 100%;
+    width: 90%;
     min-height: 400px;
 }
 .servicio{
