@@ -47,14 +47,14 @@
 .contactoSectionContent{
     min-height: 400px;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .cardDIV{
     position: relative;
     gap: 15px;
 
     aspect-ratio: 1;
-    width: 30%;
+    width: 35%;
 
     background-color: #cae7ef;
 }
@@ -65,7 +65,40 @@
 }
 
 .redesDIV{
-    background-color: blueviolet;
+    width: 65%;
+
+    /* background-color: blueviolet; */
+}
+.subRedesDIV{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 60%;
+
+    /* background-color: yellow; */
+}
+.redSocialDIV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.redSocialLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+}
+.redSocialP{
+    font-size: clamp( 21px,3vw,23px );
+    text-align: center;
+
+    min-width: 250px;
+}
+.iconSM{
+    font-size: clamp( 35px,4vw,50px );
 }
 .decoration{
     position: absolute;
@@ -75,4 +108,13 @@
     width: 100%;
 
     background-color: #003070;
+}
+
+@media screen and (max-width:800px) {
+    .contactoSectionContent{
+        flex-direction: column;
+    }
+    .redesDIV{
+        width: 100%;
+    }
 }
