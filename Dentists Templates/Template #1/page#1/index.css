@@ -10,7 +10,7 @@ body{
     min-height: 400vh;
     overflow-x: hidden;
 
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 :root{
     --colorNav: #0f0f0f;
