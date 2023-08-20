@@ -51,10 +51,15 @@
 }
 .cardDIV{
     position: relative;
+
+    width: 35%;
+}
+.card{
+    aspect-ratio: 1;
+    position: relative;
     gap: 15px;
 
-    aspect-ratio: 1;
-    width: 35%;
+    width: 100%;
 
     background-color: #cae7ef;
 }
@@ -115,6 +120,18 @@
         flex-direction: column;
     }
     .redesDIV{
+        width: 100%;
+    }
+    .cardDIV{
+        width: 100%;
+    }
+    .card{
+        width: 35%;
+        min-width: 225px;
+    }
+}
+@media screen and (max-width:470px) {
+    .subRedesDIV{
         width: 100%;
     }
 }
