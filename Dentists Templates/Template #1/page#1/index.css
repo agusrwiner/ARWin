@@ -7,9 +7,6 @@
 body{
     position: relative;
 
-    min-height: 400vh;
-    overflow-x: hidden;
-
     background-color: #f0f8ff;
 }
 :root{
