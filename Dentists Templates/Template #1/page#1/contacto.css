@@ -63,10 +63,21 @@
 
     background-color: #cae7ef;
 }
-.cardIMG{
+.circle{
+    position: relative;
+    overflow: hidden;
+
     aspect-ratio: 1;
     width: 42%;
+    min-height: 42%;
     border-radius: 50%;
+}
+.cardIMG{
+    position: relative;
+    inset: -20% 0 0 -10%;
+
+    margin: auto;
+    width: 110%;
 }
 
 .redesDIV{
