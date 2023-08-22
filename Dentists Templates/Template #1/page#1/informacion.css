@@ -27,11 +27,11 @@
 .mapsDIV{
     width: 90%;
     min-height: 350px;
-    background-color: blue;
+    /* background-color: blue;
 
     background-image: url( "Images/maps.png" );
     background-size: cover;
-    background-position-x: center;
+    background-position-x: center; */
 }
 #infoDIV{
     position: relative;
