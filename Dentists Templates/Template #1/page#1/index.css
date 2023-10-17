@@ -146,7 +146,7 @@ body{
     opacity: 0;
 }
 .nav-ul-li-a:hover{
-    color: rgb(18, 24, 117);
+    opacity: .5;
 }
 .nav-ul-li-a{
     position: relative;
@@ -159,7 +159,7 @@ body{
     font-size: 14px;
     font-weight: bold;
 
-    transition: color .4s;
+    transition: color .4s, opacity .4s;
 }
 
 .burger{
