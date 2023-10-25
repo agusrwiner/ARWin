@@ -92,7 +92,7 @@ body{
 
 /* NAVBAR */
 .navbar{
-    position: absolute;
+    position: fixed;
     z-index: 3000;
     left: 0;
     right: 0;
@@ -108,6 +108,7 @@ body{
     margin: auto;
 
     background: var(--backgroungNav);
+    /* backdrop-filter: blur(5px); */
 }
 #logoDIV{
     color: var(--colorNav);
@@ -132,10 +133,11 @@ body{
     transition: transform 600ms ease-out;
     transform-origin: right;
     transform: scaleX( 0 );
-    background-color: var(--backgroungNav);
+    background: rgba(242, 242, 242, 0.502);
 }
 .nav-active{
     transform: scaleX( 100% );
+    /* backdrop-filter: blur(5px); */
 }
 
 .nav-ul-li{
