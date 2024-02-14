@@ -92,7 +92,7 @@ body{
 
 /* NAVBAR */
 .navbar{
-    position: fixed;
+    position: absolute;
     z-index: 3000;
     left: 0;
     right: 0;
