@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Template #1</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="servicios.css">
+        <link rel="stylesheet" href="informacion.css">
+        <link rel="stylesheet" href="contacto.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <script src="script.js" defer></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=launchMap"></script>
+        <script src="https://kit.fontawesome.com/92463faf0b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="growLimit growLimitNavbar">
+                <div id="logoDIV">
+                    <img class="logo" src="" alt="Logo">
+                </div>
+                <ul class="nav-ul" aria-expanded="false">
+                    <li class="nav-ul-li">
+                        <a class="nav-ul-li-a" href="#serviciosDIV">Servicios</a>
+                    </li>
+                    <li class="nav-ul-li">
+                        <a class="nav-ul-li-a" href="#infoDIV">Informacion</a>
+                    </li>
+                    <li class="nav-ul-li">
+                        <a class="nav-ul-li-a" href="https://calendly.com/agustin_romeo_winer/sacar-turno-prueba">Sacar Turno</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
+        </nav>
+        <header class="flex" id="header">
+            <div class="exitModal"></div>
+            <span class="background" id="headerBackground"></span>
+            <div class="growLimit">
+                <h1 class="title">Dentista General</h1>
+            </div>
+        </header>
+        <div class="section flex" id="serviciosDIV">
+            <span class="background" id="serviciosBackground"></span>
+            <div class="growLimit growLimitServicios">
+                <!-- <h2 class="sectionTitle" id="titleServicios">Servicios</h2> -->
+                <div class="infoSection infoSectionTitle">
+                    <h2 class="sectionTitle" id="titleServicios">Servicios</h2>
+                </div>
+                <div class="" id="sub_serviciosDIV">
+                    <span class="servicio flex">
+                        <h4 class="servicioTitle">Brackets</h4>
+                        <p class="servicioDesc">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </span>
+                    <span class="servicio flex">
+                        <h4 class="servicioTitle">Control Dental</h4>
+                        <p class="servicioDesc">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </span>
+                    <span class="servicio flex">
+                        <h4 class="servicioTitle">Tratamiento de conducto</h4>
+                        <p class="servicioDesc">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </span>
+                    <span class="servicio flex">
+                        <h4 class="servicioTitle">Blanqueo Dental</h4>
+                        <p class="servicioDesc">Lorem ipsum dolor sit amet, consectetur.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="section flex" id="infoDIV">
+            <div class="growLimit growLimitInfo">
+                <div class="infoSection infoSectionTitle">
+                    <h2 class="sectionTitle" id="titleInfo">Informacion</h2>
+                </div>
+                <div class="infoSection infoSectionContent flex">
+                    <div class="informationDIV">
+                        <span class="infoSPAN flex" id="infoSPAN--1">
+                            <div class="test">
+                                <span class="material-symbols-outlined icon">location_on</span>
+                                <h4 class="infoSubtitle textAlignCenter">Direccion</h4>
+                            </div>
+                            <p class="infoSubtitle textAlignCenter">Av. Corrientes 4257</p>
+                        </span>
+                        <span class="separator"></span>
+                        <span class="infoSPAN flex" id="infoSPAN--2">
+                            <div class="test">
+                                <span class="material-symbols-outlined icon">schedule</span>
+                                <h4 class="infoSubtitle textAlignCenter">Horarios:</h4>
+                            </div>
+                            <p class="infoSubtitle textAlignCenter" id="lu">Lunes a Viernes de 9 - 18hs</p>
+                        </span>
+                    </div>
+                    <div class="mapsDIV" id="map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section flex" id="contactoDIV">
+            <div class="growLimit growLimitContacto">
+                <div class="contactoSection contactoSectionTitle">
+                    <h2 class="sectionTitle" id="titleContacto">Contacto</h2>
+                </div>
+                <div class="contactoSection contactoSectionContent flex">
+                    <div class="cardDIV flex">
+                        <div class="card flex">
+                            <div class="subCardDIV flex">
+                                <div class="circle">
+                                    <img class="cardIMG" src="Images/img2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="subCardDIV flex">
+                                <h3 class="cardTitle">Edith Rodriguez</h3>
+                                <h4 class="cardSubtitle">Ortodoncista</h4>
+                            </div>
+                            <div class="decoration"></div>
+                        </div>
+                    </div>
+                    <div class="redesDIV flex">
+                        <div class="subRedesDIV">
+                            <div class="redSocialDIV">
+                                <span class="redSocialLogo">
+                                    <i class="fa-brands fa-whatsapp icon iconSM"></i>
+                                </span>
+                                <p class="redSocialP">11-1234-5678</p>
+                            </div>
+                            <div class="redSocialDIV">
+                                <span class="redSocialLogo">
+                                    <i class="fa-brands fa-instagram icon iconSM"></i>
+                                </span>
+                                <p class="redSocialP">@edith_rodriguez</p>
+                            </div>
+                            <div class="redSocialDIV">
+                                <span class="redSocialLogo">
+                                    <i class="fa-solid fa-envelope icon iconSM"></i>
+                                </span>
+                                <p class="redSocialP">edithRodriguez@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex" id="footer">
+            <div class="growLimitFooter">
+                <div class="copyrightDIV">
+                    <i class="fa-regular fa-copyright iconCopyright"></i>
+                    <h5 class="titleCopyright">Todos los derechos reservados</h5>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

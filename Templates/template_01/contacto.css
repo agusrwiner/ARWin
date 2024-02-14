@@ -1,0 +1,148 @@
+.contactoSection{
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90%;
+    gap: 40px;
+
+    /* background-color: aqua; */
+}
+.contactoSectionTitle{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+#titleContacto{
+    display: inline-block;
+
+    width: auto;
+    
+    color: #003070;
+}
+#contactoDIV{
+    position: relative;
+
+    /* min-height: 75vh; */
+    padding: 80px 0;
+    width: 100vw;
+    max-width: 100%;
+
+    background-color: #e1e3e5
+}
+.growLimitContacto{
+    position: relative;
+    z-index: 2500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    min-height: 60vh;
+    width: 100%;
+    max-width: 1000px;
+
+    /* background-color: red; */
+}
+.contactoSectionContent{
+    min-height: 400px;
+
+    /* background-color: aqua; */
+}
+.cardDIV{
+    position: relative;
+
+    width: 35%;
+}
+.card{
+    aspect-ratio: 1;
+    position: relative;
+    gap: 15px;
+
+    width: 100%;
+
+    background-color: #cae7ef;
+}
+.circle{
+    position: relative;
+    overflow: hidden;
+
+    aspect-ratio: 1;
+    width: 42%;
+    min-height: 42%;
+    border-radius: 50%;
+}
+.cardIMG{
+    position: relative;
+    inset: -20% 0 0 -10%;
+
+    margin: auto;
+    width: 110%;
+}
+
+.redesDIV{
+    width: 65%;
+
+    /* background-color: blueviolet; */
+}
+.subRedesDIV{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    width: 60%;
+
+    /* background-color: yellow; */
+}
+.redSocialDIV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.redSocialLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+}
+.redSocialP{
+    font-size: clamp( 18px,3vw,23px );
+    text-align: center;
+
+    min-width: 250px;
+}
+.iconSM{
+    font-size: clamp( 30px,4vw,50px );
+}
+.decoration{
+    position: absolute;
+    bottom: 0;
+
+    height: 10%;
+    width: 100%;
+
+    background-color: #003070;
+}
+
+@media screen and (max-width:800px) {
+    .contactoSectionContent{
+        flex-direction: column;
+    }
+    .redesDIV{
+        width: 100%;
+    }
+    .cardDIV{
+        width: 100%;
+    }
+    .card{
+        width: 35%;
+        min-width: 225px;
+    }
+}
+@media screen and (max-width:470px) {
+    .subRedesDIV{
+        width: 100%;
+    }
+}
