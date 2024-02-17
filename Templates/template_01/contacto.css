@@ -40,7 +40,7 @@
 
     min-height: 60vh;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1128px;
 
     /* background-color: red; */
 }
@@ -53,6 +53,8 @@
     position: relative;
 
     width: 35%;
+
+    box-shadow: 0px 0px 12px 1px rgb(2 17 39 / 50%);
 }
 .card{
     aspect-ratio: 1;
